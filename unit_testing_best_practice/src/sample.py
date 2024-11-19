@@ -1,5 +1,5 @@
 def func(x):
-    return x + 1
+    return x + 2
 
 
 def input_credentials():
@@ -34,6 +34,5 @@ def input_credentials():
         errors.append('password must contain a special character')
     if(len(errors)>0):
         success=False
+    print(errors)
     return success,errors
-
-success,errors=input_credentials()
