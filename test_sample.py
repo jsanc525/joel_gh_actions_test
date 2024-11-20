@@ -21,6 +21,7 @@ def test_input_credentials_space_username(monkeypatch):
     a,b=input_credentials()
     assert (a==False and b==['username cannot contain whitespaces.'])
 
+#
 def test_input_credentials_empty_username(monkeypatch):
     inputs = iter(['', 'joelbolduc@hotmail.fr','abc123!!!'])
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
