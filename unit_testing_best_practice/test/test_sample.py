@@ -6,6 +6,9 @@ from sample import *
 from io import StringIO
 from unittest.mock import patch
 
+def test_greet():
+    pass
+
 def test_answer():
     assert func(3) == 5
 
