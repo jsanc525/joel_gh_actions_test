@@ -1,6 +1,9 @@
 def func(x):
     return x + 2
 
+def greet():
+    return "Hello World"
+
 def input_credentials():
     username=input('Please enter your username.')
     email=input('Please enter your email.')
