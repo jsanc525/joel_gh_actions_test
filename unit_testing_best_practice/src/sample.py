@@ -2,7 +2,7 @@ def func(x):
     return x + 2
 
 def input_credentials():
-    username=input('O, please enter your username.')
+    username=input('Please enter your username.')
     email=input('Please enter your email.')
     password=input('Please enter your password.')
     errors=[]
