@@ -25,7 +25,7 @@ def test_input_credentials_empty_username(monkeypatch):
     inputs = iter(['', 'joelbolduc@hotmail.fr','abc123!!!'])
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
     a,b=input_credentials()
-    assert (a==False and b==['username cannot be empty.'])
+    assert (a==False and b==['ousername cannot be empty.'])
 
 def test_input_credentials_email_no_at(monkeypatch):
     inputs = iter(['joel', 'joelbolduchotmail.fr','abc123!!!'])
