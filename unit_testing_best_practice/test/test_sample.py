@@ -7,7 +7,7 @@ from io import StringIO
 from unittest.mock import patch
 
 def test_greet():
-    pass
+    assert greet() == "Hello World"
 
 def test_answer():
     assert func(3) == 5
