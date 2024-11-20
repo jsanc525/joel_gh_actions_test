@@ -1,6 +1,6 @@
 import sys
 # Always run from unit_testing_best_practice/test
-sys.path += ['../src'] 
+sys.path += ['/home/runner/work/joel_gh_actions_test/joel_gh_actions_test/unit_testing_best_practice/src'] 
 
 from sample import *
 from io import StringIO
