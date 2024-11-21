@@ -2,7 +2,7 @@ import sys
 import os
 # Always run from unit_testing_best_practice/test
 cwd=os.getcwd()
-parent_dir = os.path.abspath(os.path.join(repo, os.pardir))
+parent_dir = os.path.abspath(os.path.join(cwd, os.pardir))
 src="/src"
 app_path = os.path.join(parent_dir, src)
 sys.path += [app_path] 
