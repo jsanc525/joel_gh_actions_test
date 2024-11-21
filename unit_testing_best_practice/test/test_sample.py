@@ -1,6 +1,11 @@
 import sys
+import os
 # Always run from unit_testing_best_practice/test
-sys.path += ['/home/runner/work/joel_gh_actions_test/joel_gh_actions_test/unit_testing_best_practice/src'] 
+cwd=os.getcwd()
+parent_dir = os.path.abspath(os.path.join(repo, os.pardir))
+src="/src"
+app_path = os.path.join(parent_dir, src)
+sys.path += [app_path] 
 
 from sample import *
 from io import StringIO
